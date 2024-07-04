@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="../css/custom.css">
 <link rel="alternate" href="index.xml" type="application/rss+xml" title="Muzic">
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-<title>MuseCoco: Generating Symbolic Music from Text for Composition Copilot</title>
+<title>MuseBarControl: Enhancing Fine-Grained Control in Symbolic Music Generation through Pre-Training and Counterfactual Loss</title>
 </head>
 <body>
 
@@ -38,39 +38,31 @@
 </div>
     
 
-<h2 id="baseline-samples">Comparison with Baselines</h2>
+<h2 id="baseline-samples">Comparison with MuseCoco</h2>
 <div>
     <h3>Group 1</h3>
     <table width="100%" border="1">
-        <p><b>Text Descriptions:</b> The combination of moderate speed, balanced rhythm, and major key, along with its 4/4 time signature, makes this song a prime representation of the classical style. This music would be best suited for a romantic and elegant sunset on the beach. The song structure is made up of about 15 bars. The music is influenced by Bach. The music is given its sound through piano. The use of a specific pitch range of 3 octaves creates a cohesive and unified sound throughout the musical piece. The track lasts for about 40 seconds.</p>
+       
         <table width="100%" border="1">
             <tr>
-                <th width="30%" style="text-align: left" scope="col">BART</th>
-                <th width="30%" style="text-align: left" scope="col">GPT-4</th>
-                <th width="30%" style="text-align: left" scope="col">MuseCoco</th>
+                <th width="45%" style="text-align: left" scope="col">MuseBarControl</th>
+                <th width="45%" style="text-align: left" scope="col">MuseCoco</th>
             </tr>
             <tr>
-                <td width="30%" style="text-align: left">
+                <td width="45%" style="text-align: left">
                     <audio controls="controls">
-                        <source src="../audio/musecoco/Baseline/BART/307_0.mp3" autoplay="">Your browser does not support the audio element.
+                        <source src="../audio/1.mp3" autoplay="">Your browser does not support the audio element.
                     </audio>
                 </td>
-                <td width="30%" style="text-align: left">
+                <td width="45%" style="text-align: left">
                     <audio controls="controls">
-                        <source src="../audio/musecoco/Baseline/GPT4/307_1.mp3" autoplay="">Your browser does not support the audio element.
-                    </audo>
-                </td>
-                <td width="30%" style="text-align: left">
-                    <audio controls="controls">
-                        <source src="../audio/musecoco/Baseline/MuseCoco/307_group307_s2.mp3" autoplay="">Your browser does not support the audio element.
+                        <source src="../audio/musecoco/Baseline/MuseCoco/1.mp3" autoplay="">Your browser does not support the audio element.
                     </audio>
                 </td>
             </tr>
         </table>
         <p><b>Comments:</b></p>
-        <p>BART-base: The generated sample from BART demonstrates inadequate control over attributes such as time signature, duration, and octaves. Furthermore, the sample's musicality suffers due to a lack of harmonies, resulting in an incomplete composition.</p>
-        <p>GPT-4: The generated music from GPT-4 is controlled well. However, it tends to sound monotonous since the rhythm patterns lack of variations, which is common in most generated music from GPT-4. Furthermore, some counterpoints in the composition, specifically in the 4th and 10th bars, lack well-designed integration, detracting from the overall quality of the piece.</p>
-        <p>MuseCoco: The generated music from MuseCoco is controlled precisely. Besides, it has more complex harmonies and more diverse rhythm patterns for a better listening experience.</p>
+        <p>Among the 16 valid questionnaires, 10 respondents (62.5%) felt that MuseBarControl aligns more closely with human creation. Meanwhile, 3 respondents (18.8%) preferred MuseCoco or viewed the two as similar. This indicates that the majority of participants favor MuseBarControl in terms of human-like creation.</p>
     </table>
 
     <hr>
